@@ -11,6 +11,8 @@ SLACK_CHANNEL = "#forsale"
 
 BOTNAME = "craigslist_bot"
 
+SLEEP_INTERVAL = 20 * 60  # 20 minutes
+
 # Any private settings are imported here. (SLACK_TOKEN)
 try:
     from private import *

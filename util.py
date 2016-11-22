@@ -44,6 +44,7 @@ def post_listing_to_slack(listing, sc):
            "Price: {}\n".format(listing['price'])
     if listing['where']:
         desc += "Where: {}\n".format(listing['where'])
+    desc += "When: {}\n".format(listing['datetime'])
     desc += "URL: {}".format(listing['url'])
 
     # Configure attachments if there are images
